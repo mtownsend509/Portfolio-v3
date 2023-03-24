@@ -111,14 +111,14 @@ function Portfolio(props) {
             </div>
 
             <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
-                <a href="https://github.com/mtownsend509/E-Commerce-Backend" >   
+                <a href="https://young-fjord-19401.herokuapp.com/" >   
                     <div className="card"
                     style={{backgroundImage: `url(https://blog.hubspot.com/hs-fs/hubfs/ecommerce%20marketing.jpg?width=595&height=400&name=ecommerce%20marketing.jpg)`}}                         
                     onMouseEnter={displayChange}
                     onMouseLeave={displayChange}>
                         <h3
                         style = {styles.fontDisplay}
-                        >E Commerce Backend</h3>
+                        >HackerFit</h3>
                     {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
                     </div>
                 </a>
