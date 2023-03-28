@@ -14,12 +14,12 @@ function navbar({ currentPage, pageChange }) {
         </li>
     
         <li className={currentPage === 'contact' ? 'activeTab' : ''}>
-          <a 
+          <a
           onClick={() => pageChange('contact')}>Contact</a>
         </li>
     
         <li className={currentPage === 'resume' ? 'activeTab' : ''}>
-          <a 
+          <a
           onClick={() => pageChange('resume')}>Resume</a>
         </li>
       </ul>
