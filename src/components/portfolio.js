@@ -55,6 +55,20 @@ function Portfolio(props) {
             </div>
 
             <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
+                <a href="https://young-fjord-19401.herokuapp.com/" >   
+                    <div className="card"
+                    style={{backgroundImage: `url(https://images.everydayhealth.com/images/everything-you-need-know-about-fitness-1440x810.jpg)`}}                         
+                    onMouseEnter={displayChange}
+                    onMouseLeave={displayChange}>
+                        <h3
+                        style = {styles.fontDisplay}
+                        >HackerFit</h3>
+                    {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
+                    </div>
+                </a>
+            </div>
+
+            <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
                 <a href="https://cascadecolin.github.io/WikiMusix/" >   
                     <div className="card"
                     style={{backgroundImage: `url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_626660256_2000108620009280158_388846.jpg)`}}                         
@@ -105,20 +119,6 @@ function Portfolio(props) {
                         <h3
                         style = {styles.fontDisplay}
                         >Social Network API</h3>
-                    {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
-                    </div>
-                </a>
-            </div>
-
-            <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
-                <a href="https://young-fjord-19401.herokuapp.com/" >   
-                    <div className="card"
-                    style={{backgroundImage: `url(https://blog.hubspot.com/hs-fs/hubfs/ecommerce%20marketing.jpg?width=595&height=400&name=ecommerce%20marketing.jpg)`}}                         
-                    onMouseEnter={displayChange}
-                    onMouseLeave={displayChange}>
-                        <h3
-                        style = {styles.fontDisplay}
-                        >HackerFit</h3>
                     {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
                     </div>
                 </a>
