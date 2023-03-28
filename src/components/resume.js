@@ -1,4 +1,6 @@
 import React from 'react';
+import ResLink from '../images/Resume.pdf';
+
 
 function Resume() { 
     return (
@@ -19,7 +21,7 @@ function Resume() {
             <li>Model-View-Controller paradigm</li>
             <li>Progressive Web Applications</li>
             <li>React</li>
-            <a href = '/images/Resume.pdf' download>
+            <a href = {ResLink} download>
             <li id='resItem'>Click Here to Download my Resume!</li>
             </a>
         </ul>
