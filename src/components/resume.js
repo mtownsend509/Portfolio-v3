@@ -19,7 +19,7 @@ function Resume() {
             <li>Model-View-Controller paradigm</li>
             <li>Progressive Web Applications</li>
             <li>React</li>
-            <a href = '/images/ResCap.PNG' download>
+            <a href = '/images/Resume.pdf' download>
             <li id='resItem'>Click Here to Download my Resume!</li>
             </a>
         </ul>
