@@ -12,7 +12,7 @@ function Resume() {
         <ul id='skillList'>
             <li>HTML</li>
             <li>CSS</li>
-            <li>API Building/ Useage</li>
+            <li>RESTful API Development & Useage</li>
             <li>Node</li>
             <li>Object-Oriented Programming</li>
             <li>Express</li>
@@ -21,6 +21,8 @@ function Resume() {
             <li>Model-View-Controller paradigm</li>
             <li>Progressive Web Applications</li>
             <li>React</li>
+            <li>GraphQL</li>
+            <li>MERN-stack Development</li>
             <a href = {ResLink} download>
             <li id='resItem'>Click Here to Download my Resume!</li>
             </a>
