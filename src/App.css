@@ -8,7 +8,7 @@
 
 body {
     /* background-color: rgb(209, 205, 181); */
-    background-color: white;
+    background-color: rgb(211, 239, 241);
     position: relative;
     height: 100%;
 }
@@ -46,7 +46,7 @@ header {
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
-    background: rgb(109, 171, 241);
+    background: rgb(128, 185, 250);
     border-bottom: solid;
     border-color: #9b9b9b;
     border-width: 2px;
@@ -134,11 +134,16 @@ main img {
 }
 
 .profilePic {
-    border-radius: 100%;
-    margin-left: 3.5%;
-    margin-top: 1%;
+    border-radius: 10px;
+    /* margin-left: 3%; */
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 7%;
     border: solid;
     max-height: 200px;
+    border-color: #494949;
+    border-width: 2px;
+    box-shadow: 5px 0px 15px -7px rgb(97, 97, 97), -5px 0px 15px -7px rgb(97, 97, 97);
 }
 
 #work {
@@ -182,7 +187,8 @@ section {
     margin-bottom:0%;
     transition: .3s;
     height: 0%;
-    overflow: hidden
+    overflow: hidden;
+    opacity: 0%;
 }
 
 #aboutList {
@@ -193,11 +199,11 @@ section {
 }
 
 #aboutTab {
-    background: rgb(109, 171, 241);
+    background: rgb(128, 185, 250);
     display:flex;
     width:80%;
     padding: 0%;
-    margin-top:5%;
+    margin-top:3%;
     border: solid;
     border-color: #070707;
     border-width: 2px;
@@ -206,7 +212,7 @@ section {
 }
 
 #aboutFlab {
-    background: rgb(109, 171, 241);
+    background: rgb(128, 185, 250);
     display:flex;
     width:80%;
     padding: 0%;
@@ -250,6 +256,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    /* padding-bottom: 5%; */
 }
 
 .cardpadding {
@@ -353,7 +360,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: rgb(109, 171, 241);
+    background: rgb(128, 185, 250);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(205,189,112,1) 0%, rgba(0,212,255,1) 100%); */
     padding-top: 16px;
     padding-bottom: 16px;
@@ -390,8 +397,17 @@ footer {
     footer {
         flex-direction:column;
     }
-    #work,
+    .profilePic {
+        margin: auto;
+        margin-top: 2%;
+    }
     #aboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #work{
         display:block;
     }
     h2 {
@@ -405,6 +421,12 @@ footer {
     }
     li {
         margin: 2%;
+    }
+    #aboutTest {
+        opacity: 0%;
+    }
+    .workcardsRow {
+        padding-bottom: 27%;
     }
 }
 
@@ -422,8 +444,17 @@ footer {
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px) and (min-width: 848px) {
     footer li {
         margin: 0px 25px;
     }
+    .headerList li {
+      margin: 0px 25px  
+    }
+    .workcardsRow {
+        padding-bottom: 15%;
+    }
+    /* .profilePic {
+        margin-left: %;
+    } */
 }
