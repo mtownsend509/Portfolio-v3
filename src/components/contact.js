@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import emailjs from "@emailjs/browser";
 
 function Contact() { 
 
@@ -17,6 +18,9 @@ function Contact() {
         }
     }
 
+      emailjs.init("xS1KzW64gULKTGH6m");
+
+
     const handleInputChange = (e) => {
     
       const { target } = e;
@@ -32,7 +36,7 @@ function Contact() {
       }
     };
   
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
       e.preventDefault();
   
       if (!validateEmail(email) || !name) {
@@ -44,7 +48,21 @@ function Contact() {
         setErrorMessage('Please enter a message');
         return;
       }
-  
+      
+      const serviceId = "service_is50ts4";
+      const templateId = "contact_form";
+      // const userId = "xS1KzW64gULKTGH6m";
+      const templateParams = {
+        name,
+        email,
+        message,
+      };
+
+      await emailjs
+        .send(serviceId, templateId, templateParams)
+        .then((response) => console.log(response))
+        .then((error) => console.log(error));
+
       setName('');
       setMessage('');
       setEmail('');
@@ -53,6 +71,8 @@ function Contact() {
 
     return (
     <div id='formDiv'>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript"></script>
       <form className="form">
         <input
           id = 'firstInput'
@@ -86,6 +106,10 @@ function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      <div id="altContacts">
+          <p id ='email' class="altContact">Email:<br/>mgtownsend509@gmail.com</p>
+          <p id = 'phone' class="altContact">Phone: <br></br>509-362-3839</p>
+      </div>
     </div>
   );
 }
