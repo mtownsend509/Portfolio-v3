@@ -4,7 +4,8 @@
     margin: 0%;
     box-sizing: border-box;
     font-weight: 900;
-
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 body {
@@ -646,6 +647,22 @@ footer {
         background-size: contain;
     }
     
+    header {
+        max-height: 10vh;
+    }
+
+    footer {
+        max-height: 10vh
+    }
+
+    .footerList {
+        flex-direction: row;
+    }
+
+    .footerList li {
+        padding: 10px;
+        margin: 0px 40px;
+    }
 }
 
 @media screen and (min-width: 768px) {

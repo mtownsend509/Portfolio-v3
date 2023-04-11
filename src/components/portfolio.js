@@ -25,21 +25,21 @@ function Portfolio(props) {
         event.preventDefault();
         event.target.style.opacity = '100';
         event.target.nextSibling.style.opacity = '100'
-        event.target.parentNode.style.width = '100%'
+        event.target.parentNode.style.width = '38vh'
     }
 
     const hide = (event) => {
         event.preventDefault();
         event.target.style.opacity = '0';
         event.target.nextSibling.style.opacity = '0'
-        event.target.parentNode.style.width = '60%'
+        event.target.parentNode.style.width = '30vh'
     }
 
     const showTwo = (event) => {
         event.preventDefault();
         event.target.style.opacity = '100';
         event.target.previousSibling.style.opacity = '100'
-        event.target.parentNode.style.width = '100%'
+        event.target.parentNode.style.width = '38vh'
     }
 
     const hideTwo = (event) => {
@@ -47,7 +47,7 @@ function Portfolio(props) {
         console.log(event.target.previousSibling)
         event.target.style.opacity = '0';
         event.target.previousSibling.style.opacity = '0';
-        event.target.parentNode.style.width = '60%'
+        event.target.parentNode.style.width = '30vh'
         
     }
 
