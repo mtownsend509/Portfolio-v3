@@ -3,12 +3,23 @@ import react, { useState } from 'react';
 
 function Portfolio(props) { 
 
-    let styles = {
+    let styles = ''
+
+    if (window.innerWidth < 848) {
+         styles = {
+            fontDisplay: {
+                opacity: 100,
+                transition: '.5s',
+            },
+        }
+    } else {
+        styles = {
         fontDisplay: {
             opacity: 0,
             transition: '.5s',
-        },
+        },     
     }
+}
 
     // const testing = (event) => {
     //     event.preventDefault();
@@ -25,13 +36,25 @@ function Portfolio(props) {
         event.preventDefault();
         event.target.style.opacity = '100';
         event.target.nextSibling.style.opacity = '100'
+        if (window.innerHeight < 900) {
+            event.target.parentNode.style.width = '45vh'
+            return
+        }
         event.target.parentNode.style.width = '38vh'
     }
 
     const hide = (event) => {
         event.preventDefault();
+        console.log(window)
+        if (window.innerWidth < 848) {
+            return
+        }
         event.target.style.opacity = '0';
         event.target.nextSibling.style.opacity = '0'
+        if (window.innerHeight < 900) {
+            event.target.parentNode.style.width = '35vh'
+            return
+        }
         event.target.parentNode.style.width = '30vh'
     }
 
@@ -39,14 +62,24 @@ function Portfolio(props) {
         event.preventDefault();
         event.target.style.opacity = '100';
         event.target.previousSibling.style.opacity = '100'
+        if (window.innerHeight < 900) {
+            event.target.parentNode.style.width = '45vh'
+            return
+        }
         event.target.parentNode.style.width = '38vh'
     }
 
     const hideTwo = (event) => {
         event.preventDefault();
-        console.log(event.target.previousSibling)
+        if (window.innerWidth < 848) {
+            return
+        }
         event.target.style.opacity = '0';
         event.target.previousSibling.style.opacity = '0';
+        if (window.innerHeight < 900) {
+            event.target.parentNode.style.width = '35vh'
+            return
+        }
         event.target.parentNode.style.width = '30vh'
         
     }
@@ -166,7 +199,7 @@ function Portfolio(props) {
                         style = {styles.fontDisplay}
                         onMouseEnter={show}
                         onMouseLeave={hide}
-                        >Social Network API</h3>
+                        >Social API</h3>
                         <h3 className="cardDescription"
                         style = {styles.fontDisplay}
                         onMouseEnter={showTwo}

@@ -40,7 +40,7 @@ function aboutme() {
               <h2 id="arrow"
               >&#9662;</h2>
             </div>
-            <p id="aboutSection"> &emsp;&emsp;I'm a fullstack web developer based in Seattle Washington. I graduated from the University of Washington with a major in  Cellular & Molecular biology, and a minor in English. This year I was inspired to start a change in my career path, so I enrolled in, and recently graduated from an edX web development bootcamp, also hosted by the University of Washington (see resume tab for development skillset).
+            <p id="aboutSection" class="lastSection"> &emsp;&emsp;I'm a fullstack web developer based in Seattle Washington. I graduated from the University of Washington with a major in  Cellular & Molecular biology, and a minor in English. This year I was inspired to start a change in my career path, so I enrolled in, and recently graduated from an edX web development bootcamp, also hosted by the University of Washington (see resume tab for development skillset).
             My goal for the upcoming months is to start getting on the job experience doing web development and to expand my skillset by learning Python through post class materials.
             </p>
             {/* <div id="aboutFlab"

@@ -108,7 +108,7 @@ function Contact() {
       )}
       <div id="altContacts">
           <p id ='email' class="altContact">Email:<br/>mgtownsend509@gmail.com</p>
-          <p id = 'phone' class="altContact">Phone: <br></br>509-362-3839</p>
+          <p id ='phone' class="altContact">Phone: <br></br>509-362-3839</p>
       </div>
     </div>
   );
