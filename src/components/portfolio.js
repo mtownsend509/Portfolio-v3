@@ -9,14 +9,14 @@ function Portfolio(props) {
          styles = {
             fontDisplay: {
                 opacity: 100,
-                transition: '.5s',
+                transition: '2s',
             },
         }
     } else {
         styles = {
         fontDisplay: {
             opacity: 0,
-            transition: '.5s',
+            transition: '2s',
         },     
     }
 }
@@ -159,7 +159,7 @@ function Portfolio(props) {
                         style = {styles.fontDisplay}
                         onMouseEnter={show}
                         onMouseLeave={hide}
-                        >Progressive Web App</h3>
+                        >PWA</h3>
                         <h3 className="cardDescription" 
                         style = {styles.fontDisplay}
                         onMouseEnter={showTwo}

@@ -1,5 +1,5 @@
 * {
-    font-family: Garamond, Helvetica, Calibri, Gill Sans, 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: Garamond, 'avenir light', helvetica, Calibri, Gill Sans, 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
@@ -48,11 +48,12 @@ h3 {
 				  1px -1px 0 #ffffff,
 				  -1px -1px 0 #ffffff;
     color: rgb(122, 189, 228);
-    width: 95%;
+    width: 42vh;
     margin: auto;
     margin-top: 3%;
     margin-bottom: 0%;  
     height: 20%;
+    text-align: center;
 }
 
 .headerList li {
@@ -60,8 +61,8 @@ h3 {
     }
 
 .cardDescription {
-    font-size: 1.5rem;
-    width: 95%;
+    font-size: 1.4rem;
+    width: 38vh;
     margin: auto;
     margin-top: 0%;
     text-shadow: -1px 1px 2px #ffffff,
@@ -89,6 +90,17 @@ header {
 
 header ul {
     margin-right: 7%;
+}
+
+button {
+    margin-bottom: 2%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 ul {
@@ -178,7 +190,7 @@ main img {
     margin-top: 3%;
     margin-left: 7%;
     border: solid;
-    max-height: 200px;
+    max-height: 300px;
     border-color: #494949;
     border-width: 2px;
     box-shadow: 5px 0px 15px -7px rgb(97, 97, 97), -5px 0px 15px -7px rgb(97, 97, 97);
@@ -212,7 +224,9 @@ section {
     /* box-shadow: 15px 15px 7px rgb(97, 97, 97); */
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    text-align: center;
 }
+
 
 #aboutTest {
     /* #aboutSection { */
@@ -386,13 +400,24 @@ p {
     align-items: center;
     flex-direction: column;
     height: 100%;
+    border: solid;
+    width: 50vw;
+    margin-top: 3%;
+    border-radius: 15px;
+    border-color: #9b9b9b;
+    border-width: 2px;
+    background-color: #e2e2df;
+    box-shadow: 5px 0px 15px -7px rgb(97, 97, 97), -5px 0px 15px -7px rgb(97, 97, 97);
+    background-image: url('https://wallpapers.com/images/featured/hj0l0jkozbabibwc.jpg');
+    background-size: cover;
 }
 
 .form input {
-    width: 200%;
+    width: 90%;
     line-height: 2rem;
-    margin-top: 10%;
-    margin-bottom:10%;
+    margin-top: 3%;
+    margin-bottom:3%;
+    text-align: center;
 }
 
 #altContacts {
@@ -411,7 +436,7 @@ p {
     padding-top: 5%;
     padding-bottom: 5%;
     margin: 0%;
-    margin-top:5%;
+    margin-top:3%;
     margin-bottom: 10%;
     text-align: center;
     font-size: 2rem;
@@ -423,10 +448,6 @@ p {
     border-width: 2px;
     background-color: #e2e2df;
     box-shadow: 5px 0px 15px -7px rgb(97, 97, 97), -5px 0px 15px -7px rgb(97, 97, 97);
-}
-
-#firstInput {
-    margin-top: 70%;
 }
 
 #formDiv {
@@ -597,7 +618,7 @@ footer {
         opacity: 0%;
     }
     .card {
-        width: 38vh
+        width: 45vh
     }
     #aboutList {
     padding-bottom: 40%;
@@ -723,7 +744,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1300px) and (min-width: 868px) and (min-height: 900px) {
+@media screen and (max-width: 1300px) and (min-width: 848px) and (min-height: 900px) {
     footer li {
         margin: 0px 25px;
     }
@@ -764,7 +785,7 @@ footer {
     }
 }
 
-@media screen and (max-height:900px) and (min-width: 868px) and (max-width: 1300px) {
+@media screen and (max-height:900px) and (min-width: 848px) and (max-width: 1300px) {
     h3 {
         font-size: 1.8rem;
         width: 100%;
@@ -777,6 +798,16 @@ footer {
     .card {
         height: 35vh;
         width: 35vh;
+    }
+}
+
+@media screen and (max-height:900px) and (min-width: 848px) and (max-width: 1300px) {
+    h3 {
+        font-size: 2rem;
+
+    }
+    .cardDescription {
+        font-size: 1.8rem;
     }
 }
 
@@ -823,10 +854,36 @@ footer {
     .altContact {
         font-size: 1rem;
     }
+    h1 {
+        margin-bottom: -5%;
+        margin-top: -5%;
+    }
 }
 
 @media screen and (min-width:848px) and (max-width:1390px) {
     .headerList li {
         white-space: nowrap;
     }
+}
+
+@media screen and (min-width:400px) and (max-width:430px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+}
+
+@media screen and (min-width:848px) and (max-width:1050px) {
+    .headerList li {
+        margin-right: 0%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    h3, .cardDescription {
+        width: 45vh;
+    }
+
 }
