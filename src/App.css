@@ -666,6 +666,10 @@ footer {
 
     }
     
+    .center {
+        margin-bottom: 25%;
+    }
+
     #aboutList {
     padding: 0%;
     }
@@ -742,7 +746,7 @@ footer {
         flex: 0 0 33%;
         max-width: 33%;
     }
-}
+    }
 
 @media screen and (max-width: 1300px) and (min-width: 848px) and (min-height: 900px) {
     footer li {
@@ -781,7 +785,8 @@ footer {
         font-size: 1rem;
     }
     h3 {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        margin-top: 1%;
     }
 }
 
@@ -885,5 +890,19 @@ footer {
     h3, .cardDescription {
         width: 45vh;
     }
+}
 
+@media screen and (max-width:616px) {
+    .center {
+        margin-bottom: 30%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #aboutList {
+        width: 95%;
+    }
+    .profilePic {
+        width: 75%;
+    }
 }
