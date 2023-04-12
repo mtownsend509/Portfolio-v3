@@ -905,4 +905,8 @@ footer {
     .profilePic {
         width: 75%;
     }
+    #cardDescription {
+        line-height: 1rem;
+        font-size: 1rem
+    }
 }
