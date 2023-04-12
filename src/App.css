@@ -716,6 +716,10 @@ footer {
         width: 100%
     }
 
+    .form {
+        width: 75%;
+    }
+
     .headerList li {
         font-size: 1.5rem;
         padding: 0%;
@@ -854,6 +858,9 @@ footer {
     }
     #phone {
         margin-bottom: 25%
+    }
+    .form {
+        width: 90%;
     }
 }
 
