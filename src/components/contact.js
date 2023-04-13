@@ -11,11 +11,11 @@ function Contact() {
   
     const test = (e) => {
         console.log(e.target)
-        if (e.target.value) {
-            setErrorMessage('')
-        } else {
-            setErrorMessage('All fields must be filled out')
-        }
+        // if (e.target.value) {
+        //     setErrorMessage('')
+        // } else {
+        //     setErrorMessage('All fields must be filled out')
+        // }
     }
 
       emailjs.init("xS1KzW64gULKTGH6m");
@@ -26,6 +26,7 @@ function Contact() {
       const { target } = e;
       const inputType = target.name;
       const inputValue = target.value;
+      setErrorMessage('')
   
       if (inputType === 'email') {
         setEmail(inputValue);
@@ -39,8 +40,13 @@ function Contact() {
     const handleFormSubmit = async (e) => {
       e.preventDefault();
   
-      if (!validateEmail(email) || !name) {
-        setErrorMessage('Email or name is invalid');
+      if (!validateEmail(email)) {
+        setErrorMessage('Email is invalid');
+        return;
+      }
+
+      if (!name) {
+        setErrorMessage('Please fill out the name field');
         return;
       }
 
@@ -66,7 +72,7 @@ function Contact() {
       setName('');
       setMessage('');
       setEmail('');
-      setErrorMessage('Your message has been sent! (not really though)')
+      setErrorMessage('Your message has been sent!')
     };
 
     return (
@@ -101,11 +107,13 @@ function Contact() {
         />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
+      <div id="errMessagePad">
       {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      </div>
       <div id="altContacts">
           <p id ='email' class="altContact">Email:<br/>mgtownsend509@gmail.com</p>
           <p id ='phone' class="altContact">Phone: <br></br>509-362-3839</p>
