@@ -47,7 +47,10 @@ h2 {
     margin-top: 5%;
     align-self: center;
     justify-self: center;
-    text-shadow: .4px .6px #ffffff;
+    text-shadow: -1px 1px 2px #ffffff,
+				  1px 1px 2px #ffffff,
+				  1px -1px 0 #ffffff,
+				  -1px -1px 0 #ffffff;
 }
 
 h3 {
@@ -565,11 +568,12 @@ p {
 
 .activeTab {
     border: solid;
+    border-width: 2px;
     border-color: rgb(0, 0, 0);
     color: rgb(102, 164, 235);
     background-color: rgb(243, 243, 243);
     padding: 10px 5px;
-    box-shadow: 10px 10px 10px black;
+    /* box-shadow: 10px 10px 10px black; */
 }
 
 #resContainer {
@@ -607,6 +611,10 @@ p {
 
 
 @media screen and (max-width: 848px) {
+
+    body {
+        background-size: 200%;
+    }
     aside {
         display:none;
     }
@@ -715,13 +723,8 @@ p {
     }
 
     #phone {
-        background-size: contain;
         margin-bottom: 28%;
     }  
-    
-    #email {
-        background-size: contain;
-    }
     
     header {
         max-height: 15vh;
@@ -767,6 +770,15 @@ p {
     .lastSection {
         margin-bottom: 28%; 
     }
+
+    .devList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {

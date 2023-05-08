@@ -51,7 +51,7 @@ function Resume() {
               >&#9662;</h2>
             </div>
         <ul id='aboutSection' class="devContainer">
-            <ul class = "devList">
+            <ul className = "devList">
             <li>HTML</li>
             <li>CSS</li>
             <li>Javascript</li>
