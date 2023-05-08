@@ -79,7 +79,12 @@ h3 {
 				  1px 1px 2px #ffffff,
 				  1px -1px 0 #ffffff,
 				  -1px -1px 0 #ffffff;
+                  margin: auto 25px;
     }
+
+.headerList {
+    margin-right: 0%;
+}
 
 .cardDescription {
     font-size: 1.4rem;
@@ -91,7 +96,7 @@ h3 {
 				  1px -1px 0 #ffffff,
 				  -1px -1px 0 #ffffff;
     height: 80%;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 header {
@@ -804,7 +809,11 @@ p {
         margin: 0px 25px;
     }
     .headerList li {
-      margin: auto 25px  
+      margin: auto 25px;  
+    }
+    .headerList {
+        justify-content: right;
+        margin-right: 0%;
     }
     .workcardsRow {
         padding-bottom: 15%;
