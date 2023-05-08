@@ -36,6 +36,8 @@ function Portfolio(props) {
         event.preventDefault();
         event.target.style.opacity = '100';
         event.target.nextSibling.style.opacity = '100'
+        // event.target.style.fontSize = '2.7rem';
+        // event.target.nextSibling.style.fontSize = '1.4rem'
         if (window.innerHeight < 900) {
             event.target.parentNode.style.width = '45vh'
             return
@@ -51,6 +53,8 @@ function Portfolio(props) {
         }
         event.target.style.opacity = '0';
         event.target.nextSibling.style.opacity = '0'
+        // event.target.style.fontSize = '2.13rem';
+        // event.target.nextSibling.style.fontSize = '1.1rem'
         if (window.innerHeight < 900) {
             event.target.parentNode.style.width = '35vh'
             return
@@ -179,6 +183,7 @@ function Portfolio(props) {
                         style = {styles.fontDisplay}
                         onMouseEnter={show}
                         onMouseLeave={hide}
+                        id = "weather"
                         >Weather Dashboard</h3>
                         <h3 className="cardDescription"
                         style = {styles.fontDisplay}

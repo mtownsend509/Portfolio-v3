@@ -117,7 +117,7 @@ staining, operation of flow cytometers, and cytogram analysis.
                 </li>
                 </ul>
                 <div id='lineDiv'>
-                <h2 id ="jobTitle">Field Technician | IDAX Data Solutions | 03/OCT/18 – 05/JUN-21</h2>
+                <h2 id ="jobTitle">Field Technician | IDAX Data Solutions | 03/Oct/18 – 05/Jun/21</h2>
                 </div>
                 <ul id ='jobList'>
                     <li id='jobDescription'>
@@ -132,7 +132,7 @@ and vehicle
                     </li>
                 </ul>
                 <div id='lineDiv'>
-                <h2 id ="jobTitle">Assistant Supervisor | Washington Conservation Corps | 03/OCT/16 – 22/SEP/18</h2>
+                <h2 id ="jobTitle">Assistant Supervisor | Washington Conservation Corps | 03/Oct/16 – 22/Sep/18</h2>
                 </div>
                 <ul id ='jobList'>
                     <li id='jobDescription'>
