@@ -32,7 +32,11 @@ h1 {
    line-height: 52px;
    display: inline;
    font-size: 3rem;
-   text-shadow: .4px .6px #ffffff;
+   /* text-shadow: .4px .6px #ffffff; */
+   text-shadow: -1px 1px 2px #ffffff,
+				  1px 1px 2px #ffffff,
+				  1px -1px 0 #ffffff,
+				  -1px -1px 0 #ffffff;
 }
 
 h2 {
@@ -67,7 +71,11 @@ h3 {
 }
 
 .headerList li {
-        text-shadow: .5px .5px #ffffff;
+        /* text-shadow: .5px .5px #ffffff; */
+        text-shadow: -1px 1px 2px #ffffff,
+				  1px 1px 2px #ffffff,
+				  1px -1px 0 #ffffff,
+				  -1px -1px 0 #ffffff;
     }
 
 .cardDescription {
@@ -291,8 +299,12 @@ section {
     margin-top:3%;
     border: solid;
     border-color: #070707;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,75,193,255) 0%, rgba(0,212,255,1) 100%);
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(84,19,154,255) 0%, rgba(99,37,188,255) 100%); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,75,193,255) 0%, rgba(0,212,255,1) 100%); */
+    background-image: url(
+            'https://cdn.vox-cdn.com/thumbor/z7bKIfTyJq3ibFF7YRYSCoxH3eI=/0x0:1004x753/920x613/filters:focal(422x296:582x456):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63710251/20150428-cloud-computing.0.1489222360.0.jpg' 
+            );
+    background-position: 40% 60%;
+    background-size: cover;
     border-width: 2px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -440,7 +452,7 @@ p {
     border-width: 2px;
     background-color: #e2e2df;
     box-shadow: 5px 0px 15px -7px rgb(97, 97, 97), -5px 0px 15px -7px rgb(97, 97, 97);
-    background-image: url('https://wallpapers.com/images/featured/hj0l0jkozbabibwc.jpg');
+    background-image: url('https://ugc.berkeley.edu/wp-content/uploads/2016/01/thunderstorm-3625405_1920.jpg');
     background-size: cover;
 }
 
@@ -567,12 +579,12 @@ p {
 }
 
 #phone {
-    background-image: url('https://images.ctfassets.net/pdf29us7flmy/2IM1h5B0F8wLioTRI7dUl/863f7ff6f4d4d75cb205837b41dfc3f8/Why-You-Need-Proper-Phone-Etiquette-Social.png');
+    background-image: url('https://ugc.berkeley.edu/wp-content/uploads/2016/01/thunderstorm-3625405_1920.jpg');
     background-position: center;
 }  
 
 #email {
-    background-image: url('https://email.uplers.com/blog/wp-content/uploads/2020/08/minimalist-540x282.jpg');
+    background-image: url('https://ugc.berkeley.edu/wp-content/uploads/2016/01/thunderstorm-3625405_1920.jpg');
     background-position: bottom;
 }
 
