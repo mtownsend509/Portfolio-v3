@@ -16,7 +16,7 @@ function Portfolio(props) {
         styles = {
         fontDisplay: {
             opacity: 0,
-            transition: '2s',
+            transition: '1s',
         },     
     }
 }
@@ -80,6 +80,7 @@ function Portfolio(props) {
         }
         event.target.style.opacity = '0';
         event.target.previousSibling.style.opacity = '0';
+        
         if (window.innerHeight < 900) {
             event.target.parentNode.style.width = '35vh'
             return
