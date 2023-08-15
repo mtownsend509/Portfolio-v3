@@ -307,7 +307,7 @@ section {
     color: rgb(85, 81, 81)
 }
 
-#aboutMeHobbies {
+.aboutMeHobbies {
     /* #aboutTest { */
     margin-top: 3.5%;
     border: solid;
@@ -323,7 +323,6 @@ section {
     text-align: center;
     color: rgb(85, 81, 81);
     display: block;
-    width: 86%
 }
 
 #aboutList {
@@ -393,6 +392,16 @@ section {
     display:list-item;
     list-style-type: disc;
     list-style-position: inside;
+}
+
+#volunteerPic {
+    margin-left: 0px;
+    margin-right: 5%;
+}
+
+#hobbiesPic {
+    margin-top: 0px;
+    margin-bottom: 14vh;
 }
 
 .devList {
@@ -553,7 +562,7 @@ p {
     margin-top: 1vh;
 }
 
-.end {
+#end {
     margin-bottom: 20vh;
 }
 

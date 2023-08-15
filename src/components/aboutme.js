@@ -37,16 +37,22 @@ function aboutme() {
             </p>
         </div> 
         <div id="aboutList">
-            <p id="aboutMeHobbies">Volunteer Work <br/><br/><br/>
+            <div id = 'aboutAndPic'>
+            <p class="aboutMeHobbies">Volunteer Work <br/><br/><br/>
             Wildlife Rehabilitation: I have volunteered at a local wildlife rehabilitation center for the past two years. My duties have included feeding and caring for injured animals, assisting with medical treatments, and helping to release animals back into the wild. I am passionate about wildlife conservation and am dedicated to helping animals in need. <br/><br/>
 Environmental Restoration: I have also volunteered with a local organization that focuses on restoring natural habitats and improving local ecosystems. This has involved planting trees and native vegetation, removing invasive species, and working to prevent erosion. I believe that it is important to protect our environment and to work towards a more sustainable future. <br/><br/>
-Disaster Response: I have participated in disaster response efforts both locally and internationally. This has included providing aid and support to communities affected by hurricanes, floods, and other natural disasters. I have received training in emergency response and am committed to helping those in need during times of crisis. <br/><br/>
+Disaster Response: I have participated in disaster response efforts both locally and nation-wide. This has included providing aid and support to communities affected by hurricanes, floods, and other natural disasters. I have received training in emergency response and am committed to helping those in need during times of crisis. <br/><br/>
             </p>
-            <p id="aboutMeHobbies" className="end">Hobbies <br/><br/><br/>
+            <img className ="profilePic" id='volunteerPic' src= "../images/Matt Flood Edited.JPG" />
+            </div>
+            <div id='aboutAndPic'>
+            <img className ="profilePic" id='hobbiesPic' src= "https://raw.githubusercontent.com/mtownsend509/Portfolio-v2/main/public/images/Picture.webp" />
+            <p class="aboutMeHobbies" id="end">Hobbies <br/><br/><br/>
             Playing Piano: Have you ever wanted all the benefit of hearing a 5 year old play terrible piano without all the hassel of having a kid of your own? Well hire me and I'll bring my keyboard into the office sometime! But really, playing an instrument has beneficial effects for memory and audiovisual processing. It's also a great way to relax!<br/><br/>
 Hiking: I also love spending time in nature and exploring new trails. Hiking is a great way to disconnect from technology and connect with the world around me. Whether I am hiking through the mountains or along the coast, I enjoy the physical challenge and the stunning views.<br/><br/>
 Gaming: In my free time, I also enjoy gaming. From Dungeons and Dragons to Rocket League, I find most games will offer a strategic challenge or an immersive storyline to offer a fun and unique experience. Gaming allows me to unwind and have fun while also developing problem-solving skills.<br/><br/>
             </p>
+            </div>
         </div>
         </div>   
             
