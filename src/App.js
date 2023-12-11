@@ -44,14 +44,14 @@ function App() {
 
         {renderBody()}
 
-        <footer>        
+        {/* <footer>         */}
           <ul className="footerList">
             <li><a href="https://twitter.com/MattT01960695"><SiTwitter /></a></li>
             <li><a href="https://www.linkedin.com/in/matthew-townsend-a81737223/"><SiLinkedin /></a></li>
             <li><a href="https://github.com/mtownsend509"><SiGithub /></a></li>
           </ul>
         
-        </footer> 
+        {/* </footer>  */}
 
       </div>
     </div>

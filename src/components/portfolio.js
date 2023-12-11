@@ -42,7 +42,8 @@ function Portfolio(props) {
             event.target.parentNode.style.width = '45vh'
             return
         }
-        event.target.parentNode.style.width = '38vh'
+        event.target.parentNode.style.width = '50vh'
+        event.target.parentNode.style.height = '35vh'
     }
 
     const hide = (event) => {
@@ -59,7 +60,8 @@ function Portfolio(props) {
             event.target.parentNode.style.width = '35vh'
             return
         }
-        event.target.parentNode.style.width = '30vh'
+        event.target.parentNode.style.width = '40vh'
+        event.target.parentNode.style.height = '30vh'
     }
 
     const showTwo = (event) => {
@@ -70,7 +72,9 @@ function Portfolio(props) {
             event.target.parentNode.style.width = '45vh'
             return
         }
-        event.target.parentNode.style.width = '38vh'
+        event.target.parentNode.style.width = '50vh'
+        event.target.parentNode.style.height = '35vh'
+
     }
 
     const hideTwo = (event) => {
@@ -85,7 +89,8 @@ function Portfolio(props) {
             event.target.parentNode.style.width = '35vh'
             return
         }
-        event.target.parentNode.style.width = '30vh'
+        event.target.parentNode.style.width = '40vh'
+        event.target.parentNode.style.height = '30vh'
         
     }
 
@@ -138,7 +143,8 @@ function Portfolio(props) {
             <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
                 <a href="https://cascadecolin.github.io/WikiMusix/" >   
                     <div className="card"
-                    style={{backgroundImage: `url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_626660256_2000108620009280158_388846.jpg)`}}
+                    style={{backgroundImage: `url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_626660256_2000108620009280158_388846.jpg)`,
+                            backgroundPosition: `45% 50%`}}
                     >
                         <h3
                         style = {styles.fontDisplay}
@@ -150,12 +156,11 @@ function Portfolio(props) {
                         onMouseEnter={showTwo}
                         onMouseLeave={hideTwo}
                         >An interactive app that uses Tailwind and third party APIs, and stores client side data to local storage.</h3>
-                    {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
                     </div>
                 </a>
             </div>
 
-            <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
+            {/* <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
                 <a href="https://week19texteditor.herokuapp.com/" >   
                     <div className="card"
                     style={{backgroundImage: `url(https://s40424.pcdn.co/in/wp-content/uploads/2023/02/pexels-myburgh-roux-1102797-1140x900.jpg)`}}
@@ -170,7 +175,6 @@ function Portfolio(props) {
                         onMouseEnter={showTwo}
                         onMouseLeave={hideTwo}
                         >An installable text editor that uses IndexedDB, Webpack, service workers, and babel</h3>
-                    {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
                     </div>
                 </a>
             </div>
@@ -191,7 +195,6 @@ function Portfolio(props) {
                         onMouseEnter={showTwo}
                         onMouseLeave={hideTwo}
                         >A simple weather forcast app that uses the third party APIs Moment.js, Bootstrap, and Open Weather</h3>
-                    {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
                     </div>
                 </a>
             </div>
@@ -211,10 +214,9 @@ function Portfolio(props) {
                         onMouseEnter={showTwo}
                         onMouseLeave={hideTwo}
                         >A back end API that uses NoSQL database (mongodb) to create routes and create models</h3>
-                    {/* <a href=" https://mtownsend509.github.io/Refactoring-HTML-CSS-MattT/Develop/index.html"><img src={props.html} alt="HTML and CSS logos"/></a> */}
                     </div>
                 </a>
-            </div>
+            </div> */}
 
         </div>
     </section>

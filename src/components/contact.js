@@ -80,6 +80,7 @@ function Contact() {
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
       <script type="text/javascript"></script>
       <form className="form">
+        <div id='emailName'>
         <input
           id = 'firstInput'
           value={email}
@@ -97,7 +98,9 @@ function Contact() {
           placeholder="name"
           onMouseLeave={test}
         />
-        <input
+        </div>
+        <textarea
+        id='message'
           value={message}
           name="message"
           onChange={handleInputChange}

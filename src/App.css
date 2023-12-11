@@ -17,10 +17,11 @@ body {
         'https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2021/09/White-abstract-background-wallpaper-illustration-e1656162692761.jpg?resize=1000%2C750&ssl=1'
         
         ); */
-        background-image: url(
+        /* background-image: url(
             'https://img.freepik.com/free-vector/abstract-minimal-white-background_23-2148887988.jpg?w=1380&t=st=1682967502~exp=1682968102~hmac=3d8f8b1f8e4ac45c5a298a9edd6643e49090017863e5bed21bd7b6853f98cae7'
             
-            );
+            ); */
+            background-color: rgb(216, 226, 235);
     background-size: cover;
     /* background-color: rgb(211, 239, 241); */
     position: relative;
@@ -28,7 +29,7 @@ body {
 }
 
 h1 {
-   margin-left: 2%;
+   margin-left: 3%;
    line-height: 52px;
    display: inline;
    font-size: 3rem;
@@ -83,7 +84,7 @@ h3 {
     }
 
 .headerList {
-    margin-right: 0%;
+    margin-right: 2%;
 }
 
 .cardDescription {
@@ -103,16 +104,17 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background: rgb(128, 185, 250);
+    padding-top: 24px;
+    padding-bottom: 12px;
+    /* background: rgb(128, 185, 250); */
     border-bottom: solid;
     border-color: #9b9b9b;
     border-width: 1px;
+    background-color: rgb(203, 217, 238);
     /* background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png'); */
-    background-image: url('https://images.hdqwalls.com/wallpapers/tree-leaves-summer.jpg');
+    /* background-image: url('https://images.hdqwalls.com/wallpapers/tree-leaves-summer.jpg');
     background-position: 70% 70%;
-    background-size: cover;
+    background-size: cover; */
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(205,189,112,1) 0%, rgba(0,212,255,1) 100%); */
 }
 
@@ -123,16 +125,16 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: rgb(128, 185, 250);
+    /* background: rgb(128, 185, 250); */
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(205,189,112,1) 0%, rgba(0,212,255,1) 100%); */
     padding-top: 16px;
     padding-bottom: 16px;
-    border-top: solid;
+    /* border-top: solid; */
     border-color: #9b9b9b;
     border-width: 1px;
-    background-image: url('https://images.hdqwalls.com/wallpapers/tree-leaves-summer.jpg');
+    /* background-image: url('https://images.hdqwalls.com/wallpapers/tree-leaves-summer.jpg');
     background-position: 70%;
-    background-size: cover;
+    background-size: cover; */
 }
 
 header ul {
@@ -159,6 +161,7 @@ ul {
 
 li {
     margin: auto 50px;
+    /* margin: 100% 0%; */
     font-size: 1.75rem;
     list-style-type: none;
     line-height: 20px;
@@ -401,7 +404,7 @@ section {
 
 #hobbiesPic {
     margin-top: 0px;
-    margin-bottom: 14vh;
+    margin-bottom: 4vh;
 }
 
 .devList {
@@ -479,12 +482,12 @@ p {
 .cardpadding {
     width: 100%;
     padding: 2% 2%;
-    margin-top: 2vh;
+    margin-top: 20vh;
 }
 
 
 .card {
-    width: 30vh;
+    width: 40vh;
     height: 30vh;
     border:solid;
     display:flex;
@@ -492,7 +495,7 @@ p {
     align-items: flex-start;
     justify-content: flex-start;
     /* background-color: royalblue; */
-    background-image: url("https://www.exodus.com/img/news/content/2022/11/flat-550x550-075-f.u1.jpg");
+    /* background-image: url("https://www.exodus.com/img/news/content/2022/11/flat-550x550-075-f.u1.jpg"); */
     background-size: cover;
     margin: auto;
     transition: 'transform 150ms ease'; 
@@ -516,12 +519,37 @@ p {
     background-size: cover;
 }
 
-.form input {
-    width: 90%;
-    line-height: 2rem;
+.form input, textarea {
+    width: 28%;
+    line-height: 2.5rem;
     margin-top: 3%;
     margin-bottom:3%;
+    margin-left: 6%;
+    margin-right: 6%;
     text-align: center;
+}
+
+textarea {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+::placeholder {
+    line-height: 7rem;
+    text-align: center;
+}
+
+#emailName {
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#message {
+    width: 90%;
+    height: 8rem
 }
 
 #altContacts {
@@ -563,7 +591,7 @@ p {
 }
 
 #end {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 .error-text {
@@ -625,7 +653,16 @@ p {
 
 .footerList {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+
+}
+
+.footerList li {
+    margin: 100% 0%;
 }
 
 .activeTab {

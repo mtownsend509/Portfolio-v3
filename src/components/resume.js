@@ -82,10 +82,10 @@ function Resume() {
               >&#9662;</h2>
             </div>
             <div id="aboutSection" class="devContainer">
-            <p >WEB DEVELOPMENT EDX CERTIFICATION | UNIVERSITY OF WASHINGTON 2016
+            <p >WEB DEVELOPMENT EDX CERTIFICATION | UNIVERSITY OF WASHINGTON 2023
             </p>
             <p>
-            BACHELOR OF SCIENCE, CELLULAR/MOLECULAR BIOLOGY | UNIVERSITY OF WASHINGTON 2023
+            BACHELOR OF SCIENCE, CELLULAR/MOLECULAR BIOLOGY | UNIVERSITY OF WASHINGTON 2016
             </p>
             </div>
         </div>
