@@ -39,11 +39,11 @@ function Portfolio(props) {
         // event.target.style.fontSize = '2.7rem';
         // event.target.nextSibling.style.fontSize = '1.4rem'
         if (window.innerHeight < 900) {
-            event.target.parentNode.style.width = '45vh'
+            event.target.parentNode.style.width = '45vw'
             return
         }
-        event.target.parentNode.style.width = '50vh'
-        event.target.parentNode.style.height = '35vh'
+        event.target.parentNode.style.width = '25vw'
+        event.target.parentNode.style.height = '18vw'
     }
 
     const hide = (event) => {
@@ -57,11 +57,11 @@ function Portfolio(props) {
         // event.target.style.fontSize = '2.13rem';
         // event.target.nextSibling.style.fontSize = '1.1rem'
         if (window.innerHeight < 900) {
-            event.target.parentNode.style.width = '35vh'
+            event.target.parentNode.style.width = '20vw'
             return
         }
-        event.target.parentNode.style.width = '40vh'
-        event.target.parentNode.style.height = '30vh'
+        event.target.parentNode.style.width = '20vw'
+        event.target.parentNode.style.height = '15vw'
     }
 
     const showTwo = (event) => {
@@ -69,11 +69,11 @@ function Portfolio(props) {
         event.target.style.opacity = '100';
         event.target.previousSibling.style.opacity = '100'
         if (window.innerHeight < 900) {
-            event.target.parentNode.style.width = '45vh'
+            event.target.parentNode.style.width = '25vw'
             return
         }
-        event.target.parentNode.style.width = '50vh'
-        event.target.parentNode.style.height = '35vh'
+        event.target.parentNode.style.width = '25vw'
+        event.target.parentNode.style.height = '18vw'
 
     }
 
@@ -86,11 +86,11 @@ function Portfolio(props) {
         event.target.previousSibling.style.opacity = '0';
         
         if (window.innerHeight < 900) {
-            event.target.parentNode.style.width = '35vh'
+            event.target.parentNode.style.width = '20vw'
             return
         }
-        event.target.parentNode.style.width = '40vh'
-        event.target.parentNode.style.height = '30vh'
+        event.target.parentNode.style.width = '20vw'
+        event.target.parentNode.style.height = '15vw'
         
     }
 
@@ -108,7 +108,7 @@ function Portfolio(props) {
                         style = {styles.fontDisplay}
                         onMouseEnter={show}
                         onMouseLeave={hide}
-                        >A day in the leaf</h3>
+                        >PlantTracker</h3>
                         <h3 className="cardDescription"
                         style = {styles.fontDisplay}
                         onMouseEnter={showTwo}
@@ -160,7 +160,7 @@ function Portfolio(props) {
                 </a>
             </div>
 
-            {/* <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
+            <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
                 <a href="https://week19texteditor.herokuapp.com/" >   
                     <div className="card"
                     style={{backgroundImage: `url(https://s40424.pcdn.co/in/wp-content/uploads/2023/02/pexels-myburgh-roux-1102797-1140x900.jpg)`}}
@@ -216,7 +216,7 @@ function Portfolio(props) {
                         >A back end API that uses NoSQL database (mongodb) to create routes and create models</h3>
                     </div>
                 </a>
-            </div> */}
+            </div>
 
         </div>
     </section>

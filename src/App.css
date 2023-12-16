@@ -66,12 +66,12 @@ h3 {
 				  1px -1px 0 #ffffff,
 				  -1px -1px 0 #ffffff;
     color: rgb(0, 0, 0);
-    width: 42vh;
+    width: 20vw;
     margin: auto;
     margin-top: 3%;
     margin-bottom: 0%;  
     height: 20%;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .headerList li {
@@ -88,8 +88,8 @@ h3 {
 }
 
 .cardDescription {
-    font-size: 1.4rem;
-    width: 38vh;
+    font-size: 1.5rem;
+    width: 20vw;
     margin: auto;
     margin-top: 0%;
     text-shadow: -1px 1px 2px #ffffff,
@@ -353,9 +353,10 @@ section {
     border: solid;
     border-color: #070707;
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,75,193,255) 0%, rgba(0,212,255,1) 100%); */
-    background-image: url(
+    /* background-image: url(
             'https://cdn.vox-cdn.com/thumbor/z7bKIfTyJq3ibFF7YRYSCoxH3eI=/0x0:1004x753/920x613/filters:focal(422x296:582x456):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63710251/20150428-cloud-computing.0.1489222360.0.jpg' 
-            );
+            ); */
+    background-color: rgb(212, 176, 247);
     background-position: 40% 60%;
     background-size: cover;
     border-width: 2px;
@@ -476,13 +477,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin-bottom: 12%;
 }
 
 .cardpadding {
     width: 100%;
     padding: 2% 2%;
-    margin-top: 20vh;
 }
 
 
@@ -666,11 +665,11 @@ textarea {
 }
 
 .activeTab {
-    border: solid;
+    /* border: solid;
     border-width: 2px;
-    border-color: rgb(0, 0, 0);
-    color: rgb(102, 164, 235);
-    background-color: rgb(243, 243, 243);
+    border-color: rgb(0, 0, 0); */
+    color: rgb(139, 54, 219);
+    /* background-color: rgb(243, 243, 243); */
     padding: 10px 5px;
     /* box-shadow: 10px 10px 10px black; */
 }
@@ -826,11 +825,15 @@ textarea {
     }
 
     footer {
-        max-height: 10vh
+        max-height: 10vh;
     }
 
     .footerList {
         flex-direction: row;
+        position: absolute;
+        bottom: 0%;
+        max-height: 10vh;
+        width:100%
     }
 
     .footerList li {
@@ -901,7 +904,6 @@ textarea {
       margin: auto 25px;  
     }
     .headerList {
-        justify-content: right;
         margin-right: 0%;
     }
     .workcardsRow {
@@ -1007,6 +1009,12 @@ textarea {
     }
     #aboutMeTest {
         width: 90%;
+    }
+    #volunteerPic, #hobbiesPic {
+        margin-top: 3%;
+    }
+    #hobbiesPic {
+        margin-bottom: 0%;
     }
 }
 

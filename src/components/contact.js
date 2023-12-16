@@ -89,6 +89,7 @@ function Contact() {
           type="email"
           placeholder="email"
           onMouseLeave={test}
+          style = {{fontSize: `14px`}}
         />
         <input
           value={name}
@@ -97,6 +98,7 @@ function Contact() {
           type="text"
           placeholder="name"
           onMouseLeave={test}
+          style = {{fontSize: `14px`}}
         />
         </div>
         <textarea
@@ -107,6 +109,7 @@ function Contact() {
           type="message"
           placeholder="message"
           onMouseLeave={test}
+          style = {{fontSize: `14px`}}
         />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>

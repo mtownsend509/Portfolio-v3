@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Aboutme from './components/aboutme';
+import Aboutme from './components/Aboutme';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Resume from './components/resume';
@@ -11,8 +11,15 @@ import { SiLinkedin, SiGithub, SiTwitter } from "react-icons/si"
 
 function App() {
 
+  const [currentSize, setSize] = useState(window.innerWidth)
   const [currentPage, setPage] = useState('aboutme');
   const [display, setDisplay] = useState('none');
+
+  function updateSize () {
+    setSize(window.innerWidth)
+  }
+
+  window.addEventListener('resize', updateSize)
 
   const renderBody = () => {
     if(currentPage === 'aboutme') {

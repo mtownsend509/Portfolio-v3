@@ -1,5 +1,4 @@
-function aboutme() { 
-
+function Aboutme() { 
     // const style = {
     //     transform: show ? 'rotate(180deg)' : '',
     //     transition: 'transform 150ms ease',
@@ -15,6 +14,18 @@ function aboutme() {
             event.target.parentNode.nextSibling.id = `aboutSection`
             event.target.parentNode.children[1].style.transform = 'rotate(0deg)'
         }
+    }
+
+    const pictureUp = () => {
+        if(window.innerWidth <= `1080`)
+            return <img className ="profilePic" id='volunteerPic' src= "https://github.com/mtownsend509/Picture/blob/main/Matt%20Flood%20Edited.JPG?raw=true" 
+            />           
+    }
+
+    const pictureDown = () => {
+        if(window.innerWidth > `1080`)
+        return <img className ="profilePic" id='volunteerPic' src= "https://github.com/mtownsend509/Picture/blob/main/Matt%20Flood%20Edited.JPG?raw=true" 
+        />           
     }
 
     let dropTest = '&#9662;'
@@ -38,12 +49,13 @@ function aboutme() {
         </div> 
         <div id="aboutList">
             <div id = 'aboutAndPic'>
+            {pictureUp()}
             <p class="aboutMeHobbies">Volunteer Work <br/><br/><br/>
             Wildlife Rehabilitation: I have volunteered at a local wildlife rehabilitation center for the past two years. My duties have included feeding and caring for injured animals, assisting with medical treatments, and helping to release animals back into the wild. I am passionate about wildlife conservation and am dedicated to helping animals in need. <br/><br/>
 Environmental Restoration: I have also volunteered with a local organization that focuses on restoring natural habitats and improving local ecosystems. This has involved planting trees and native vegetation, removing invasive species, and working to prevent erosion. I believe that it is important to protect our environment and to work towards a more sustainable future. <br/><br/>
 Disaster Response: I have participated in disaster response efforts both locally and nation-wide. This has included providing aid and support to communities affected by hurricanes, floods, and other natural disasters. I have received training in emergency response and am committed to helping those in need during times of crisis. <br/><br/>
             </p>
-            <img className ="profilePic" id='volunteerPic' src= "https://github.com/mtownsend509/Picture/blob/main/Matt%20Flood%20Edited.JPG?raw=true" />
+            {pictureDown()}
             </div>
             <div id='aboutAndPic'>
             <img className ="profilePic" id='hobbiesPic' src= "https://github.com/mtownsend509/Picture/blob/main/Matt%207.jpg?raw=true" />
@@ -60,4 +72,4 @@ Gaming: In my free time, I also enjoy gaming. From Dungeons and Dragons to Rocke
     );
 }
 
-export default aboutme
+export default Aboutme
