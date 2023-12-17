@@ -218,6 +218,44 @@ function Portfolio(props) {
                 </a>
             </div>
 
+            <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
+                <a href="https://github.com/mtownsend509/Social-Network-API" >   
+                    <div className="card"
+                    style={{backgroundImage: `url(https://star-center.org/wp-content/uploads/2018/06/C.W.-Pic-3-1170x590.jpg)`}}                         
+                    >
+                        <h3
+                        style = {styles.fontDisplay}
+                        onMouseEnter={show}
+                        onMouseLeave={hide}
+                        >Social API</h3>
+                        <h3 className="cardDescription"
+                        style = {styles.fontDisplay}
+                        onMouseEnter={showTwo}
+                        onMouseLeave={hideTwo}
+                        >A back end API that uses NoSQL database (mongodb) to create routes and create models</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div className="cardpadding"  style={{backgroundImage: `url(${props.html})`}}>
+                <a href="https://github.com/mtownsend509/Social-Network-API" >   
+                    <div className="card"
+                    style={{backgroundImage: `url(https://hbr.org/resources/images/article_assets/2020/07/Jul20_13_1136201908.jpg)`}}                         
+                    >
+                        <h3
+                        style = {styles.fontDisplay}
+                        onMouseEnter={show}
+                        onMouseLeave={hide}
+                        >Social API</h3>
+                        <h3 className="cardDescription"
+                        style = {styles.fontDisplay}
+                        onMouseEnter={showTwo}
+                        onMouseLeave={hideTwo}
+                        >A back end API that uses NoSQL database (mongodb) to create routes and create models</h3>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </section>
     );
